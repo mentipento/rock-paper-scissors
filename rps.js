@@ -19,7 +19,12 @@ function getHumanChoice() {
     let choice = prompt("Please enter 'R' for Rock, 'P' for Paper or 'S' for Scissors", "")
     if (choice === "R" || choice === "P" || choice =="S") {
         return choice;
-    } else return getHumanChoice();
+    } else 
+     alert("Invalid Input! Please enter 'R', 'P' or 'S'");
+    return getHumanChoice();
 }
 
 getHumanChoice()
+
+let humanScore = 0;
+let computerScore = 0;
