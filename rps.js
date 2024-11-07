@@ -1,14 +1,25 @@
+function getComputerChoice() {
 
-function restart() {
+    let randomNumber = Math.floor(Math.random()*10);
 
-    if ((Math.floor(Math.random()*10) === 1 || 2 || 3) === true) {
+    if (randomNumber === 1) {
         return "Rock";
-        } else if ((Math.floor(Math.random()*10) === 4 || 5 || 6) === true) {
+        } else if (randomNumber === 2) {
             return "Paper";
-        } else if ((Math.floor(Math.random()*10) === 7 || 8 || 9) === true) {
+        } else if (randomNumber === 3) {
             return "Scissors";
-        } else restart();
+        } else return getComputerChoice();  // never forget return otherwise undifined
     }
     
-restart()
+    getComputerChoice()
 
+
+function getHumanChoice() {
+
+    let choice = prompt("Please enter 'R' for Rock, 'P' for Paper or 'S' for Scissors", "")
+    if (choice === "R" || choice === "P" || choice =="S") {
+        return choice;
+    } else return getHumanChoice();
+}
+
+getHumanChoice()
