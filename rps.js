@@ -61,6 +61,16 @@ console.log(`YOU: ${humanScore} COM: ${computerScore}`);
 
 }
 
+console.log(`The final result is YOU: ${humanScore} COM: ${computerScore}`)
+
+if (humanScore > computerScore) {
+    console.log(`Congratulations! You won.`);
+} else if (humanScore < computerScore) {
+    console.log(`You lost! You brought shame on you and your family.`);
+} else {
+    console.log(`It's a draw! How boring...`);
+}
+
 }
 
 playGame();
