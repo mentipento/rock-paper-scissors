@@ -1,4 +1,9 @@
+function playGame() {
 
+let humanScore = 0;
+let computerScore = 0;
+
+for (let i = 0; i < 5; i++) {
 
 function getComputerChoice() {
 
@@ -26,11 +31,6 @@ function getHumanChoice() {
 }
 
 let humanChoice = getHumanChoice();
-
-function playGame() {
-
-let humanScore = 0;
-let computerScore = 0;
 
 function playRound(computerChoice, humanChoice) {
     if (computerChoice === "Rock" && humanChoice === "P") {
@@ -61,4 +61,6 @@ console.log(`YOU: ${humanScore} COM: ${computerScore}`);
 
 }
 
-playGame()
+}
+
+playGame();
