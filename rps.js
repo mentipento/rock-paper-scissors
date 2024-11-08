@@ -7,15 +7,15 @@ for (let i = 0; i < 5; i++) {
 
 function getComputerChoice() {
 
-    let randomNumber = Math.floor(Math.random() * 10);
+    let randomNumber = Math.floor(Math.random() * 3);
 
-    if (randomNumber === 1) {
+    if (randomNumber === 0) {
         return "Rock";
-    } else if (randomNumber === 2) {
+    } else if (randomNumber === 1) {
         return "Paper";
-    } else if (randomNumber === 3) {
+    } else if (randomNumber === 2) {
         return "Scissors";
-    } else return getComputerChoice(); // never forget return otherwise undifined
+    } 
 }
     
 let computerChoice = getComputerChoice();
