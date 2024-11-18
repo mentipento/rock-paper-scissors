@@ -5,17 +5,25 @@ let computerScore = 0;
 
 for (let i = 0; i < 5; i++) {
 
+// function getComputerChoice() {
+
+//     let randomNumber = Math.floor(Math.random() * 3);
+
+//     if (randomNumber === 0) {
+//         return "Rock";
+//     } else if (randomNumber === 1) {
+//         return "Paper";
+//     } else if (randomNumber === 2) {
+//         return "Scissors";
+//     } 
+// }
+
 function getComputerChoice() {
 
+    const array = ["Rock", "Paper", "Scissors"]
     let randomNumber = Math.floor(Math.random() * 3);
+    return array[randomNumber];
 
-    if (randomNumber === 0) {
-        return "Rock";
-    } else if (randomNumber === 1) {
-        return "Paper";
-    } else if (randomNumber === 2) {
-        return "Scissors";
-    } 
 }
     
 let computerChoice = getComputerChoice();
